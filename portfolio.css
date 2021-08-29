@@ -1,0 +1,362 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    margin: 0;
+}
+
+
+/*------**************home-section**********--------------*/
+
+
+
+/*----------------------background picture-------------------------*/
+#home{
+    background:url(images/pc6.jpg);/*rgba(35,43,56,0.9)*/
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+    overflow: hidden;
+}
+
+/*----------------------navigation bar-------------------------*/
+.navbar{
+   background-color:rgba(35,43,56,0.6) ;
+   width:100%;
+    padding: 1% 5%;
+    text-align: center;
+   /* opacity: .5;*/
+    display: flex;
+   
+    flex-basis: 30%;
+    position: fixed;   
+}
+.logo{
+   
+    margin-left:7rem;
+    justify-content: flex-start;
+    
+}
+.navbar-menu{
+    font-family: 'Montserrat', sans-serif;
+    margin:0 0 3rem 19rem;
+}
+.navbar-menu a{
+  
+    text-decoration: none;
+    color:#fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 6px;
+    transition: transform 5s;
+}
+.navbar-menu a:hover{
+   /*background-color:#fff;*/
+   
+    color:#2cf3df;
+}
+.navbar-menu a:active{
+    color:#ff5252;
+}
+/*.navbar-menu a:visited{
+    color:yellow;
+}*/
+
+
+
+  /*----------------------Home details-------------------------*/
+  
+  .home-details{
+    text-align: center;
+    margin-top:17rem;
+
+  }
+  .intro{
+      
+      color:white;
+  }
+  .intro p{
+      font-size:1.3rem;
+  }
+  .intro h1{
+      font-size:1.8rem;
+  }
+  .intro h1 span{
+      font-size: 3rem;
+      background: -webkit-linear-gradient(#fff,#eee,#009688);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      
+  }
+  
+  /*----------------------home page button-------------------------*/
+  .button .tooltip{
+    width:7%;
+    background-color:#009688;
+    border-radius: .3rem;
+    padding:.6rem;
+    border:none;
+    margin:1rem auto 0rem;
+    transition: .5s;
+  }
+  .button button:hover{
+    background-color: white;
+      color:#333;
+
+  }
+  
+  .button a{
+      text-decoration: none;
+      color:white;
+      font-size:.9rem;
+      transition: .5s;
+      
+  }
+  .button a:hover{
+    color:#333;
+    background-color: #fd6d6d;
+}
+
+/*-----------------------tooltip--------------------*/
+.tooltip .tooltip-text{
+    visibility: hidden;
+    width: 150px;
+    background-color: #fff;
+    color:#009688;
+    padding:10px;
+    border-radius: 5px;
+    position: absolute;
+    top:370px;
+    left:750px;
+}
+.tooltip:hover .tooltip-text{
+    visibility: visible;
+}
+
+/*---------***************about-section ----***************-------*/
+#about{
+    margin:4rem 4rem;
+
+}
+/*---------------all page head section-----------------*/
+.heading {
+    text-align: center;
+    
+}
+.heading p{
+    font-size: 35px;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+    color:#fc2626;  
+}
+
+.heading span{
+    font-size:28px;
+    font-family: 'Hina Mincho', serif;
+    font-weight: 700;
+    padding-top:0;
+    color:#028578;
+}
+/*---------------about-body------------------------*/
+.about-right{
+    padding-top: 8rem;
+    padding-left: 2rem;
+   
+}
+.aboutme{
+    display: flex;
+    width:80%;
+    margin: auto;
+    }
+.about-right p{
+    font-family: 'Hina Mincho', serif;
+    font-size: 1.3rem;
+    text-align: justify;
+
+}
+.about-right h1{
+    font-family: 'Cormorant Garamond', serif;
+   /* font-family: 'Poppins', sans-serif;*/
+    color: #009688;
+    font-size: 30px;
+
+}
+
+/*------****************Qualification-section**********------------*/
+.back-color{
+    background-color: #eafdfb;
+  
+    padding:30px 0;
+}
+.edu-row{
+    width: 80%;
+    display:flex;
+    margin: auto;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 2.1rem;  
+    
+}
+.edu-col{
+    flex-basis: 26%;
+    
+    text-align: justify;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: #2cf3df;
+
+}
+.edu-col span{
+    font-weight: 700;
+    color:#ff5252;
+    font-size: 20px;
+}
+  
+.edu-info i{
+
+    color:blue;
+    
+}
+.edu-info h4{
+    font-size: 20px;
+}
+.edu-col p{
+    font-weight: 700;
+}
+
+
+
+
+/*-------------*********************skill section************-----------------*/
+
+.skill-page{
+    background-color: /*#f6fdfd;*/#f2f2f2;
+}
+.row-skill{
+    display:flex;
+    width: 80%;
+    margin:auto;
+   align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    padding-top:70px;
+
+  
+}
+.skill-heading h3{
+    text-align: center;
+}
+.col-skill {
+    flex-basis: 28%;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 10px 19px 3px #d5faf6;
+    padding:10px;
+    cursor: pointer;
+    transition: transform .5s;
+    margin-bottom: 25px;
+   background-color: #fff;
+    
+    
+}
+.col-skill:hover{
+    transform: translateY(-8px)
+}
+.skill-heading{
+    color:#028578;
+}
+.col-skill p{
+  /*  margin: 0  20px 10px 20px;*/
+  text-align: center;
+ font-weight: 700;
+
+}
+.style{
+    font-size:3rem;
+    padding-top: 1rem;
+}
+.style span{
+    font-size:3.5rem;
+    padding-top: 1rem;
+    color:#fc2626; 
+}
+.lang-style span{
+    color:#fc2626; 
+}
+
+
+
+
+/*-------------*********************contact-section****************-------------------*/
+.backimage{
+    background:linear-gradient(rgba(35,43,56,0.9),rgba(35,43,56,0.9)),url(images/contact.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.contact-info{
+  
+    text-align: center;
+    color:#fff;
+    margin:10px;
+    padding:30px 0 30px 0;
+}
+.contact-info a{
+    text-decoration: none;
+    color:#fff;
+    transition: .5s;
+
+}
+.contact-info a:hover{
+    font-size:19px;
+    color:#fd6d6d;
+}
+
+
+.contact-link{
+    text-align: center;
+    padding:2rem;
+}
+.contact-link i{
+    color: #009688;
+    font-size: 55px;
+}
+.contact-link .fa{
+    margin:5px;
+    padding:.9rem;
+    border:1px solid #009688;
+    background-color: #fff;
+    border-radius: 5px;
+    font-size:1rem;
+    transition: transform .5s;
+    
+
+}
+.contact-link .fa:hover{
+
+    transform: translateY(-7px);
+    background-color: #009688;
+    color:#fff;
+}
+.contact-info i{
+    padding-right: 11px;
+  
+}
+.contact-info span{
+    color:cyan;
+}
+.copy{
+    text-align: center;
+    padding:2rem 0 2rem 0;
+}
+
+
+
+
+
+
+
+
